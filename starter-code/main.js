@@ -7,8 +7,7 @@ var cardFour = "king";
 
 if (cardTwo === cardFour) {
 	alert("You found a match!");
-}
-	else (cardTwo != cardFour) {
+} else {
 		alert("Sorry, try again.");
 	}
 
@@ -40,10 +39,10 @@ var isMatch = function(cards) {
 var isTwoCards = function() {
 	cardsInPlay.push(this.getAttribute('data-card'));
 		console.log(this.getAttribute('data-card'));
-	if (this.getAttribute('data-card') === 'king') {
-		this.innerHTML = "<img src="king.png" alt="King" />";
+	if (this.getAttribute('data-card') === 'king'){
+		this.innerHTML = "<img src='king.png' alt='King' />";
 	} else {
-		this.innerHTML = "<img src="queen.png" alt="queen" />";
+		this.innerHTML = "<img src='queen.png' alt='queen' />";
 	}
 }
 
